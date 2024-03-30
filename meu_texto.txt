@@ -1,0 +1,2 @@
+Esse é meu arquivo de texto que está
+sendo lido pelo fs.
