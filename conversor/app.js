@@ -3,10 +3,12 @@ var Processor = require("./Processor");
 var Writer = require("./Writer");
 var Table = require("./Table");
 var HtmlParser = require("./HtmlParser");
+var PDFWriter = require("./PDFWriter");
 
 
 var leitor = new Reader();
 var escritor = new Writer();
+
 
 
 async function main(){
@@ -25,6 +27,7 @@ async function main(){
     // gerar um aruivo novo o nome vai mudar    
 
     escritor.Write( Date.now()+".html",html);
+    PDFWriter.writePdf( Date.now()+".PDF",html);
 
     
 
