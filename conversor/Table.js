@@ -18,6 +18,22 @@ class Table{
     }
 
 
+    //contadores de linhas e colunas 
+    // ATENÇÃO: embora seja possivel pegar esses valores direto no construtor
+    //          não é aconselhavel porque eles ficam desatualizados 
+    //          eles vão mostrar sempre a quantidade inicial de linhas e colunas 
+    //          já separando em metodos eles atualizam conforme a demanda 
+
+
+    get RowCount(){
+        return this.rows.length;
+    }
+
+    get ColumnCount(){
+        return this.header.length;
+    }
+
+
 }
 
 module.exports = Table;
