@@ -25,7 +25,7 @@ class Reader{
          
        }catch(err){
 
-         return undefined
+         console.log(err)
 
        }
     }

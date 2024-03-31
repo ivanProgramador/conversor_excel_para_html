@@ -1,5 +1,16 @@
 var Reader = require("./Reader");
+var Processor = require("./Processor");
+
 
 var leitor = new Reader();
 
-leitor.Read("./lista_de_alunos.csv")
+async function main(){
+
+    var dados = await leitor.Read("./lista_de_alunos.csv");
+
+    var dadosProcessados =  Processor.Process(dados);
+
+  
+}
+
+main();
